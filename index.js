@@ -54,10 +54,10 @@ bot.on("message", async (msg) => {
           },
         ],
 
-        model: "llama-3.3-70b-versatile",
+        model: "deepseek-r1-distill-llama-70b",
 
       });
-
+console.log("MODEL AKTIF: deepseek-r1-distill-llama-70b");
     // ambil jawaban AI
     const aiResponse =
       chatCompletion.choices[0]
