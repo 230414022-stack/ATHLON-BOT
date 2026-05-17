@@ -78,7 +78,7 @@ console.log("MODEL AKTIF: meta-llama/llama-4-scout-17b-16e-instruct");
       .message.content;
 chatHistory[chatId].push({
   role: "assistant",
-  content: aiReply,
+  content: aiResponse,
 });
     // kirim ke telegram
     await bot.sendMessage(
