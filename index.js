@@ -46,6 +46,7 @@ if (!chatHistory[chatId]) {
 }
    if (!userMessage) return;
 
+<<<<<<< HEAD
    // RESET MEMORY
 if (userMessage === "/reset") {
   delete chatHistory[chatId];
@@ -56,6 +57,8 @@ if (userMessage === "/reset") {
   );
 }
 
+=======
+>>>>>>> 973dbca480eab9fff3618a97c1ad5579c6b9f2bc
   bot.sendChatAction(chatId, "typing");
 
   try {
