@@ -46,19 +46,16 @@ if (!chatHistory[chatId]) {
 }
    if (!userMessage) return;
 
-<<<<<<< HEAD
-   // RESET MEMORY
-if (userMessage === "/reset") {
+  // RESET MEMORY
+if (userMessage.trim().toLowerCase() === "/reset") {
   delete chatHistory[chatId];
 
   return bot.sendMessage(
     chatId,
-    "🧠 Memory has been clear. Ready to new chat sir😎"
+    "🧠 Memory berhasil direset. Mulai chat baru 😎"
   );
 }
 
-=======
->>>>>>> 973dbca480eab9fff3618a97c1ad5579c6b9f2bc
   bot.sendChatAction(chatId, "typing");
 
   try {
