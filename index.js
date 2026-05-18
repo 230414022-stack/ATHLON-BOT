@@ -99,11 +99,11 @@ CARA MENJAWAB:
 - Jika tidak yakin, katakan dengan jujur dan bantu dengan pendekatan terbaik
 
 FORMAT RESPON:
-- Gunakan format yang rapi dan mudah dibaca
-- Hindari tanda kutip atau simbol yang tidak perlu
-- Gunakan bullet atau numbering seperlunya
-- Jangan menggunakan markdown berlebihan
-- Untuk jawaban panjang, gunakan paragraf dan struktur yang jelas
+- Gunakan tulisan yang rapi dan mudah dibaca
+- Hindari markdown berlebihan seperti ** atau simbol yang tidak perlu
+- Gunakan numbering atau bullet seperlunya
+- Hindari tanda kutip dekoratif atau format yang bisa merusak tampilan chat
+- Utamakan keterbacaan dan struktur yang jelas
 
 BATASAN:
 - Jangan mengaku bisa melakukan sesuatu yang sebenarnya tidak bisa dilakukan sistem
@@ -135,10 +135,7 @@ chatHistory[chatId].push({
     // kirim ke telegram
     await bot.sendMessage(
   chatId,
-  aiResponse,
-  {
-    parse_mode: "Markdown",
-  }
+  aiResponse
 );
   } catch (error) {
 
