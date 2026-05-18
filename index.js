@@ -98,6 +98,13 @@ CARA MENJAWAB:
 - Jika pertanyaan ambigu, boleh minta klarifikasi
 - Jika tidak yakin, katakan dengan jujur dan bantu dengan pendekatan terbaik
 
+FORMAT RESPON:
+- Gunakan format yang rapi dan mudah dibaca
+- Hindari tanda kutip atau simbol yang tidak perlu
+- Gunakan bullet atau numbering seperlunya
+- Jangan menggunakan markdown berlebihan
+- Untuk jawaban panjang, gunakan paragraf dan struktur yang jelas
+
 BATASAN:
 - Jangan mengaku bisa melakukan sesuatu yang sebenarnya tidak bisa dilakukan sistem
 - Jangan membuat informasi palsu atau sok yakin
@@ -127,10 +134,12 @@ chatHistory[chatId].push({
 });
     // kirim ke telegram
     await bot.sendMessage(
-      chatId,
-      aiResponse
-    );
-
+  chatId,
+  aiResponse,
+  {
+    parse_mode: "Markdown",
+  }
+);
   } catch (error) {
 
     console.log("ERROR:", error);
