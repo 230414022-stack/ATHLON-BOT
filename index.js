@@ -52,7 +52,7 @@ if (userMessage.trim().toLowerCase() === "/reset") {
 
   return bot.sendMessage(
     chatId,
-    "🧠 Memory berhasil direset. Mulai chat baru 😎"
+    "Memory has been cleared. Ready to new chat sir😎"
   );
 }
 
